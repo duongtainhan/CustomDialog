@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private void DialogLogin(){
         final Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.custom_dialog);
+        dialog.setCanceledOnTouchOutside(false);
         //Anh xa
         final EditText edUser = dialog.findViewById(R.id.edUser);
         final EditText edPass = dialog.findViewById(R.id.edPass);
